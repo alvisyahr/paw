@@ -27,7 +27,7 @@ function mouseSwipped() {
             if(mouseupY < mousedownY && angka < 25) {
                 let isiA = angka + 1;
                 if (isiA < 10) {
-                  e.innerHTML = `0${isiA}`;
+                  e.innerHTML = `${isiA}`;
                 } else {
                   e.innerHTML = isiA;
                 }
@@ -35,7 +35,7 @@ function mouseSwipped() {
               if(mouseupY > mousedownY && angka > 0) {
                 let isiA = angka - 1;
                 if (isiA < 10) {
-                  e.innerHTML = `0${isiA}`;
+                  e.innerHTML = `${isiA}`;
                 } else {
                   e.innerHTML = isiA;
                 }
@@ -47,7 +47,7 @@ function touchSwipped() {
         if(touchendY < touchstartY && angka<25) {
             let isiA = angka+1;
             if(isiA<10){
-                e.innerHTML = `0${isiA}`;
+                e.innerHTML = `${isiA}`;
             }
             else{
                 e.innerHTML = isiA;
@@ -56,7 +56,7 @@ function touchSwipped() {
         if(touchendY > touchstartY && angka>0) {  
             let isiA = angka-1;
             if(isiA<10){
-                e.innerHTML = `0${isiA}`;
+                e.innerHTML = `${isiA}`;
             }
             else{
             e.innerHTML = isiA;
